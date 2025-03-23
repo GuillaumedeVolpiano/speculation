@@ -75,7 +75,7 @@ import qualified Data.Foldable as Foldable
 import Control.Concurrent.STM
 import Control.Concurrent.Speculation
 import Control.Concurrent.Speculation.Internal
-import Control.Applicative
+import Control.Applicative hiding (asum)
 import Control.Monad hiding (mapM_, msum, forM_, sequence_)
 
 -- | Given a valid estimator @g@, @'fold' g f xs@ yields the same answer as @'fold' f xs@.
